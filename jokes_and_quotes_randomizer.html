@@ -69,7 +69,7 @@
 
 
         function postRandomJoke() {
-            $.ajax('https://cors-anywhere.herokuapp.com/https://api.icndb.com/jokes/random').done(function(data) {
+            $.ajax('https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random').done(function(data) {
                 // console.log(data.value.joke);
                 var output = "";
                 var joke = data.value.joke
@@ -110,7 +110,7 @@
         }
 
         function changeProgrammerBox() {
-            $.ajax('https://cors-anywhere.herokuapp.com/https://api.icndb.com/jokes/random').done(function(data) {
+            $.ajax('https://cors-anywhere.herokuapp.com/http://api.icndb.com/jokes/random').done(function(data) {
                 $('#picture-here').removeClass('program-box').removeClass('boxes').addClass('chuck-box');
             })
         }
