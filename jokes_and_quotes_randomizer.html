@@ -88,14 +88,14 @@
             postRandomQuote();
         });
 
-        $.ajax('http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
-            console.log(data.quote);
-        })
+        // $.ajax('http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
+        //     console.log(data.quote);
+        // })
 
         function postRandomQuote() {
             var output = "";
 
-            $.ajax('http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
+            $.ajax('https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
                 var quote = data.quote;
                 output += '<p>' + quote + '</p>';
 
@@ -104,7 +104,7 @@
         }
 
         function changeChuckBox() {
-            $.ajax('http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
+            $.ajax('https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json').done(function(data) {
                 $('#picture-here').removeClass('chuck-box').removeClass('boxes').addClass('program-box');
             })
         }
