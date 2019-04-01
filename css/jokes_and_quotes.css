@@ -11,7 +11,7 @@ body {
 
 .chuck-box {
     width: auto;
-    height: 19em;
+    height: 22em;
     border: 1px solid gray;
     background-color: rgba(238, 238, 238, 0.60) !important; /* Opacity */
     background-blend-mode: color; /* Opacity */
@@ -23,7 +23,7 @@ body {
 
 .program-box {
     width: auto;
-    height: 19em;
+    height: 22em;
     border: 1px solid gray;
     background-color: rgba(238, 238, 238, 0.81) !important; /* Opacity */
     background-blend-mode: color; /* Opacity */
@@ -38,6 +38,7 @@ body {
     justify-content:center;
     align-items: center;
     flex-flow: column;
+    padding: 0em 6em;
 }
 
 #intro {
