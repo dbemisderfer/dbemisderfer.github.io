@@ -11,7 +11,7 @@ body {
 
 .chuck-box {
     width: auto;
-    height: 22em;
+    height: 22em; /* Necessary for picture to display correct*/
     border: 1px solid gray;
     background-color: rgba(238, 238, 238, 0.60) !important; /* Opacity */
     background-blend-mode: color; /* Opacity */
